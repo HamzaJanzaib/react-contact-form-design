@@ -141,38 +141,118 @@ body {
   flex-direction: column;
   margin-top: 5%;
 }
-.form-field input{
+
+.form-field input {
   padding: 10px;
   width: 90%;
   margin: 20px;
 }
-.form-field textarea{
+
+.form-field textarea {
   padding: 10px;
   width: 90%;
   margin: 20px;
   max-width: 90%;
   max-height: 30%;
 }
-.form-field #textarea{
+
+.form-field #textarea {
   position: absolute;
   left: 5%;
-  top: 5%;
+  top: 2%;
   background-color: white;
   padding: 5px;
 }
-.box{
+
+.box {
   position: relative;
 }
-.box label{
+
+.box label {
   position: absolute;
   left: 5%;
   top: 8%;
   background-color: white;
   padding: 3px;
 }
-.BUTT{
+
+.BUTT {
   width: 40%;
   display: flex;
   align-items: center;
   justify-content: end;
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    padding: 40px 20px;
+  }
+
+  .contaner {
+    width: 100vw;
+  }
+
+  .text {
+    padding: 20px 10px;
+  }
+
+  .text h1 {
+    font-size: 30px;
+  }
+
+  .cover {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+
+  .left {
+    width: 100%;
+    margin-bottom: 60%;
+  }
+
+  .right {
+    width: 100%;
+    height: 100%;
+  }
+
+  .right img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .form-main {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .outline-btn {
+    width: 100%;
+  }
+
+  .form-field input {
+    width: fit-content;
+  }
+
+  .form-field textarea {
+    width: 100%;
+  }
+
+  .box label {
+    left: 5%;
+    top: 8%;
+  }
+
+  .BUTT {
+    width: 100%;
+  }
+
 }

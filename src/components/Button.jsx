@@ -1,12 +1,12 @@
 
 
-const Button = (props) => {
-    console.log(props);
+const Button = ({icon  , text , ...rest}) => {
+
     
     return (
-        <button className="button"> 
-           {props.icon}
-           {props.text}
+        <button {...rest} className="button"> 
+           {icon}
+           {text}
         </button>
     )
 }
